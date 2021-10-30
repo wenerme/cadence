@@ -52,7 +52,7 @@ require (
 	github.com/stretchr/testify v1.5.1
 	github.com/uber-go/tally v3.3.15+incompatible
 	github.com/uber/ringpop-go v0.8.5
-	github.com/uber/tchannel-go v1.16.0
+	github.com/uber/tchannel-go v1.22.0
 	github.com/uber/tcheck v1.1.0
 	github.com/urfave/cli v1.22.4
 	github.com/valyala/fastjson v1.4.1
@@ -64,15 +64,15 @@ require (
 	go.uber.org/config v1.4.0
 	go.uber.org/fx v1.13.1
 	go.uber.org/multierr v1.6.0
-	go.uber.org/thriftrw v1.25.0
-	go.uber.org/yarpc v1.55.0
+	go.uber.org/thriftrw v1.29.2
+	go.uber.org/yarpc v1.58.0
 	go.uber.org/zap v1.13.0
-	golang.org/x/net v0.0.0-20201031054903-ff519b6c9102
+	golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4
 	golang.org/x/oauth2 v0.0.0-20200107190931-bf48bf16ab8d
-	golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9
+	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/text v0.3.4 // indirect
 	golang.org/x/time v0.0.0-20191024005414-555d28b269f0
-	golang.org/x/tools v0.1.0
+	golang.org/x/tools v0.1.5
 	gonum.org/v1/gonum v0.7.0
 	google.golang.org/api v0.26.0
 	google.golang.org/appengine v1.6.7 // indirect
@@ -88,6 +88,3 @@ require (
 
 // ringpop-go and tchannel-go depends on older version of thrift, yarpc brings up newer version
 replace github.com/apache/thrift => github.com/apache/thrift v0.0.0-20161221203622-b2a4d4ae21c7
-
-// until new version is released we need to pick up https://github.com/yarpc/yarpc-go/pull/2047
-replace go.uber.org/yarpc => go.uber.org/yarpc v1.52.1-0.20210303193224-b2caa40d56b6
