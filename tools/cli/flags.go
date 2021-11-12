@@ -282,6 +282,8 @@ const (
 	FlagDynamicConfigName                 = "dynamic_config_name"
 	FlagDynamicConfigFilter               = "dynamic_config_filter"
 	FlagDynamicConfigValue                = "dynamic_config_value"
+	FlagStructType                        = "struct_type"
+	FlagStructTypeWithAlias               = FlagStructType + ", st"
 )
 
 var flagsForExecution = []cli.Flag{

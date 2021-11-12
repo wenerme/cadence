@@ -21,6 +21,8 @@
 package codec
 
 import (
+	"encoding/hex"
+	"fmt"
 	"log"
 	"os"
 	"testing"
@@ -86,6 +88,7 @@ func (s *thriftRWEncoderSuite) TestEncode() {
 
 func (s *thriftRWEncoderSuite) TestDecode() {
 	var val workflow.HistoryEvent
+	fmt.Println(hex.EncodeToString(thriftEncodedBinary))
 	err := s.encoder.Decode(thriftEncodedBinary, &val)
 	s.Nil(err)
 	val.Equals(thriftObject)
