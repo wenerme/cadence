@@ -962,7 +962,7 @@ func newDBCommands() []cli.Command {
 				},
 				cli.StringFlag{
 					Name:  FlagStructTypeWithAlias,
-					Usage: "the struct type, supporting" + strings.Join(getDecodingTypeKeys(), ","),
+					Usage: "the struct type, supporting:" + strings.Join(getDecodingTypeKeys(), ","),
 				},
 			},
 			Action: func(c *cli.Context) {
